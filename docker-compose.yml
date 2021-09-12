@@ -20,8 +20,9 @@ services:
         ports:
           - 4440:4440
     mysql:
+        platform: linux/x86_64
         container_name: mysql
-        image: mysql:8
+        image: mysql:latest
         expose:
           - 3306
         cap_add:
